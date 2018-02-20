@@ -27,11 +27,14 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
   trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
-  if (hashValues[16]) result.name = decodeURI(hashValues[16])
-  if (hashValues[17]) result.title = decodeURI(hashValues[17])
+  // Change this value up if introducing new levels
+  if (hashValues[11]) result.name = decodeURI(hashValues[11])
+  // Same here.
+  if (hashValues[12]) result.title = decodeURI(hashValues[12])
   return result
 }
 
+// ADD MILESTONE HERE
 const coerceMilestone = (value: number): Milestone => {
   // HACK I know this is goofy but i'm dealing with flow typing
   switch(value) {
@@ -39,8 +42,6 @@ const coerceMilestone = (value: number): Milestone => {
     case 1: return 1
     case 2: return 2
     case 3: return 3
-    case 4: return 4
-    case 5: return 5
     default: return 0
   }
 }
@@ -50,50 +51,40 @@ const emptyState = (): SnowflakeAppState => {
     name: '',
     title: '',
     milestoneByTrack: {
-      'MOBILE': 0,
-      'WEB_CLIENT': 0,
-      'FOUNDATIONS': 0,
-      'SERVERS': 0,
+      'SKILLS_DEPTH': 0,
+      'SKILLS_BREADTH': 0,
+      'ARCHITECTURE': 0,
+      'PRACTICES_QUALITY': 0,
+      'OPERATIONAL_EXCELLENCE': 0,
+      'CUSTOMER': 0,
+      'BUSINESS': 0,
+      'MENTORSHIP': 0,
       'PROJECT_MANAGEMENT': 0,
       'COMMUNICATION': 0,
-      'CRAFT': 0,
-      'INITIATIVE': 0,
-      'CAREER_DEVELOPMENT': 0,
-      'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
-      'MENTORSHIP': 0,
-      'EVANGELISM': 0,
-      'RECRUITING': 0,
-      'COMMUNITY': 0
+      'ACCOUNTABILITY': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'SKILLS_DEPTH'
   }
 }
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Cersei Lannister',
+    name: 'Frontline Fred',
     title: 'Staff Engineer',
     milestoneByTrack: {
-      'MOBILE': 1,
-      'WEB_CLIENT': 2,
-      'FOUNDATIONS': 3,
-      'SERVERS': 2,
-      'PROJECT_MANAGEMENT': 4,
-      'COMMUNICATION': 1,
-      'CRAFT': 1,
-      'INITIATIVE': 4,
-      'CAREER_DEVELOPMENT': 3,
-      'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
-      'MENTORSHIP': 2,
-      'EVANGELISM': 2,
-      'RECRUITING': 3,
-      'COMMUNITY': 0
+      'SKILLS_DEPTH': 1,
+      'SKILLS_BREADTH': 2,
+      'ARCHITECTURE': 3,
+      'PRACTICES_QUALITY': 2,
+      'OPERATIONAL_EXCELLENCE': 0,
+      'CUSTOMER': 1,
+      'BUSINESS': 4,
+      'MENTORSHIP': 3,
+      'PROJECT_MANAGEMENT': 2,
+      'COMMUNICATION': 0,
+      'ACCOUNTABILITY': 0
     },
-    focusedTrackId: 'MOBILE'
+    focusedTrackId: 'SKILLS_DEPTH'
   }
 }
 
@@ -155,12 +146,20 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
         `}</style>
-        <div style={{margin: '19px auto 0', width: 142}}>
+        <div style={{margin: '19px auto 0'}}>
           <a href="https://medium.com/" target="_blank">
             <Wordmark />
           </a>
         </div>
-        <div style={{display: 'flex'}}>
+        <div style={{display: 'flex', justifyContent: 'center' }}>
+          <div style={{flex: 0}}>
+            <NightingaleChart
+                milestoneByTrack={this.state.milestoneByTrack}
+                focusedTrackId={this.state.focusedTrackId}
+                handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
+          </div>
+        </div>
+        <div style={{display: 'flex', justifyContent: 'center' }}>
           <div style={{flex: 1}}>
             <form>
               <input
@@ -170,19 +169,13 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   onChange={e => this.setState({name: e.target.value})}
                   placeholder="Name"
                   />
-              <TitleSelector
+              {/* <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
-                  setTitleFn={(title) => this.setTitle(title)} />
+                  setTitleFn={(title) => this.setTitle(title)} /> */}
             </form>
-            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
-          </div>
-          <div style={{flex: 0}}>
-            <NightingaleChart
-                milestoneByTrack={this.state.milestoneByTrack}
-                focusedTrackId={this.state.focusedTrackId}
-                handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
+            {/* <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
+            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} /> */}
           </div>
         </div>
         <TrackSelector
@@ -198,14 +191,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             milestoneByTrack={this.state.milestoneByTrack}
             trackId={this.state.focusedTrackId}
             handleTrackMilestoneChangeFn={(track, milestone) => this.handleTrackMilestoneChange(track, milestone)} />
-        <div style={{display: 'flex', paddingBottom: '20px'}}>
-          <div style={{flex: 1}}>
-            Made with ❤️ by <a href="https://medium.engineering" target="_blank">Medium Eng</a>.
-            Learn about the <a href="https://medium.com/s/engineering-growth-framework" target="_blank">growth framework</a>.
-            Get the <a href="https://github.com/Medium/snowflake" target="_blank">source code</a>.
-            Read the <a href="https://medium.com/p/85e078bc15b7" target="_blank">terms of service</a>.
-          </div>
-        </div>
+        
       </main>
     )
   }

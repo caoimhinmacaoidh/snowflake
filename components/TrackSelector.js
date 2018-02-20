@@ -10,7 +10,7 @@ type Props = {
   setFocusedTrackIdFn: (TrackId) => void
 }
 
-class TrackSelector extends React.Component<Props> {
+export default class TrackSelector extends React.Component<Props> {
   render() {
     return (
       <table>
@@ -60,5 +60,3 @@ class TrackSelector extends React.Component<Props> {
     )
   }
 }
-
-export default TrackSelector
