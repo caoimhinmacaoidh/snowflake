@@ -264,7 +264,7 @@ export const tracks: Tracks = {
       "signals": [
         "Defines and implements alarms which capture failure modes for business critical use-cases",
         "Maintains ongoing awareness of how their team's systems perform in production",
-        "LoremSafetyCultureIpsum",
+        "Uses production telemetry to understand possible contributing factors and focus problem-solving when investigating SPOC or user issues",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -305,9 +305,9 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Able to break down, plan and manage incremental development of stories, communicating progress effectively",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Break down stories into smaller tasks, with a clear idea around timeframe",
+        "Estimates small tasks accurately",
+        "Identifies and communicates risk to delivery of assigned tasks early and to the appropriate people",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -319,7 +319,7 @@ export const tracks: Tracks = {
       "signals": [
         "LoremSafetyCultureIpsum",
         "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Identifies and communicates risk to delivery of team's projects early and to the appropriate people",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -329,9 +329,9 @@ export const tracks: Tracks = {
     }, {
       "summary": "Able to break down, plan and manage incremental development of complex features that could span multiple teams",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Delegates tasks to others appropriately",
+        "Manages dependencies on other projects and teams",
+        "Anticipates future risk to team's projects and takes appropriate mitagating action to ensure projects stay on track",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -346,11 +346,11 @@ export const tracks: Tracks = {
     "category": "C",
     "description": "LoremSafetyCultureIpsum",
     "milestones": [{
-      "summary": "LoremSafetyCultureIpsum",
+      "summary": "Continually uses relevant metrics to help teams make decisions",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Identifies and correct areas of code lacking analytics",
+        "Participates in customer calls, shares learnings and assists customer experience by answering support requests",
+        "Contributes to building and maintaining team metrics dashboard and uses it to focus team discussions",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -358,11 +358,11 @@ export const tracks: Tracks = {
         "LoremSafetyCultureIpsum",
       ],
     }, {
-      "summary": "LoremSafetyCultureIpsum",
+      "summary": "Continually voices customer and product impact when discussing features & functionality ",
       "signals": [
-        "LoremSafetyCultureIpsums",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "In product discussions refers to numerous specific customers by name and can explain their particular set of problems",
+        "Continually evaluates product success metrics, identifying when particular metrics have outlived their usefulness and suggests suitable alternatives",
+        "Builds 'first-name' relationships with numerous SafetyCulture users who they can turn to to validate assumptions made in their team",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -370,10 +370,10 @@ export const tracks: Tracks = {
         "LoremSafetyCultureIpsum",
       ],
     }, {
-      "summary": "LoremSafetyCultureIpsum",
+      "summary": "Drives initiatives to enhance mission and customer obsession across the wider team  ",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Identifies an industry need, and enacts a program to address it",
+        "Maintains a deep understanding of the competitive landscape and uses that knowledge to inform team direction and prioritisation decisions",
         "LoremSafetyCultureIpsum",
       ],
       "examples": [
@@ -386,15 +386,15 @@ export const tracks: Tracks = {
 
 
   "MENTORSHIP": {
-    "displayName": "Business",
+    "displayName": "Company",
     "category": "C",
     "description": "LoremSafetyCultureIpsum",
     "milestones": [{
-      "summary": "LoremSafetyCultureIpsum",
+      "summary": "Steps up, builds connectedness, and takes concrete actions to promote a high performance culture",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Regularly provides thoughtful feedback in team retrospective",
+        "Identifies problems and suggests corrective course of action mid-sprint",
+        "Takes on additional SPOC shifts at short notice",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -402,11 +402,11 @@ export const tracks: Tracks = {
         "LoremSafetyCultureIpsum",
       ],
     }, {
-      "summary": "LoremSafetyCultureIpsum",
+      "summary": "Exemplifies selflessness for the team without compromising responsibilities",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Regularly attends planning and retrospective sessions of other teams to share learnings",
+        "Holds self and immediate team members accountable for team commitments",
+        "Takes on large amounts of tedious grunt work for the team without being asked",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -414,11 +414,11 @@ export const tracks: Tracks = {
         "LoremSafetyCultureIpsum",
       ],
     }, {
-      "summary": "LoremSafetyCultureIpsum",
+      "summary": "Lives by SafetyCulture's values, guards our culture, and introduces initiatives that support connectedness between teams",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Regularly looks for opportunities to help other teams achieve their deadlines without compromising their own teamwork",
+        "Brings separate teams together to build connectedness",
+        "Holds individuals, teams, and leadership accountable to SafetyCulture's values",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -431,9 +431,9 @@ export const tracks: Tracks = {
   "PROJECT_MANAGEMENT": {
     "displayName": "Coaching & Mentoring",
     "category": "D",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Provides support to colleagues, spreads knowledge, and develops the team outside of formal reporting structures",
     "milestones": [{
-      "summary": "Provides support to colleagues, spreads knowledge, and develops the team outside of formal reporting structures",
+      "summary": "Actively seeks and provides constructive feedback from team members",
       "signals": [
         "LoremSafetyCultureIpsum",
         "LoremSafetyCultureIpsum",
