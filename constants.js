@@ -86,7 +86,7 @@ export const tracks: Tracks = {
   "SKILLS_DEPTH": {
     "displayName": "Skills Depth",
     "category": "A",
-    "description": "Develops deep expertise in a discipline",
+    "description": "Builds deep understanding within their main areas/platforms of competency, developing a thorough knowledge of nuances and latest industry trends",
     "milestones": [{
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
@@ -129,7 +129,7 @@ export const tracks: Tracks = {
   "SKILLS_BREADTH": {
     "displayName": "Skills Breadth",
     "category": "A",
-    "description": "Develops a broad set of competencies across multiple platforms",
+    "description": "Develops a breadth of complementary understanding and knowledge in areas/platforms outside of their core competencies ",
     "milestones": [{
       "summary": "Has a good understanding of a variety of platforms and approaches outside of their core competency",
       "signals": [
@@ -172,7 +172,7 @@ export const tracks: Tracks = {
   "ARCHITECTURE": {
     "displayName": "Practices & Quality",
     "category": "B",
-    "description": "Embodies and promotes practices to ensure excellent quality of SafetyCulture's products and services",
+    "description": "Works towards continuous and compounding improvements in our development practices to ensure we deliver the best possible experience to our users",
     "milestones": [{
       "summary": "Reduces complexity, increases robustness and reliability of codebases, and devotes time to polishing products and systems",
       "signals": [
@@ -215,7 +215,7 @@ export const tracks: Tracks = {
   "PRACTICES_QUALITY": {
     "displayName": "Manage Complexity",
     "category": "B",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Consistently strives to ensure a healthy balance between quality and speed recognising the necessity of trade-offs",
     "milestones": [{
       "summary": "Understands high level architecture of their team's areas of ownership",
       "signals": [
@@ -258,7 +258,7 @@ export const tracks: Tracks = {
   "OPERATIONAL_EXCELLENCE": {
     "displayName": "Operational Excellence",
     "category": "B",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Advocates for the belief that 'good is not good enough'. Pushes themselves and their team to be better every day",
     "milestones": [{
       "summary": "Aware of operational concerns when building features & functionality",
       "signals": [
@@ -301,7 +301,7 @@ export const tracks: Tracks = {
   "CUSTOMER": {
     "displayName": "Project Management",
     "category": "B",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Manages communications and interactions between stakeholders ensuring that projects are deliveerd with agreed scope and on time",
     "milestones": [{
       "summary": "Able to break down, plan and manage incremental development of stories, communicating progress effectively",
       "signals": [
@@ -317,8 +317,8 @@ export const tracks: Tracks = {
     }, {
       "summary": "Able to break down, plan and manage incremental development of features for the team",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Facilitates effective Stand-Up, Planning, Retrospective & Showcase meetings within their team",
+        "Confidently wears the PM hat within their team to fill a gap where no full-time PM is available",
         "Identifies and communicates risk to delivery of team's projects early and to the appropriate people",
       ],
       "examples": [
@@ -344,7 +344,7 @@ export const tracks: Tracks = {
   "BUSINESS": {
     "displayName": "Customer",
     "category": "C",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Builds meaningful and mutually beneficial relationships with SafetyCulture's customers, leveraging those relationships to help their teams deliver experiences that bring delight",
     "milestones": [{
       "summary": "Continually uses relevant metrics to help teams make decisions",
       "signals": [
@@ -374,7 +374,7 @@ export const tracks: Tracks = {
       "signals": [
         "Identifies an industry need, and enacts a program to address it",
         "Maintains a deep understanding of the competitive landscape and uses that knowledge to inform team direction and prioritisation decisions",
-        "LoremSafetyCultureIpsum",
+        "Analyzes or mines large data-sets to build insights and to identify otherwise untapped customer opportunities",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -388,7 +388,7 @@ export const tracks: Tracks = {
   "MENTORSHIP": {
     "displayName": "Company",
     "category": "C",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Focuses intensely on making SafetyCulture better in every way. Holds themself and other around them accountable for contribution and for results",
     "milestones": [{
       "summary": "Steps up, builds connectedness, and takes concrete actions to promote a high performance culture",
       "signals": [
@@ -435,9 +435,9 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Actively seeks and provides constructive feedback from team members",
       "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
+        "Regularly seeks out opportunities to participate in initiatives that place them out of their comfort zone",
+        "Engages in activities and initiatives aimed at increasing self-awareness & emotional intelligence",
+        "Consistently provides timely, behaviour-focused feedback to peers, delivered in a constructive and respectful manner",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -461,7 +461,7 @@ export const tracks: Tracks = {
       "signals": [
         "Provides guidance and mentorship to senior engineering staff and to individuals outside of engineering",
         "Allows others to lead major high-impact initiatives, providing ongoing guidance and course-correction",
-        "LoremSafetyCultureIpsum",
+        "Fosters and develops coaching skills in others",
       ],
       "examples": [
         "LoremSafetyCultureIpsum",
@@ -517,7 +517,7 @@ export const tracks: Tracks = {
   "ACCOUNTABILITY": {
     "displayName": "Communication",
     "category": "D",
-    "description": "LoremSafetyCultureIpsum",
+    "description": "Delivers the right amount of information to the right people at the right time in a respectful and thoughful manner",
     "milestones": [{
       "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
       "signals": [
