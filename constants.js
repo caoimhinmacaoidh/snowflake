@@ -1,9 +1,9 @@
 // @flow
 import * as d3 from 'd3'
 
-export type TrackId = 'SKILLS_DEPTH' | 'SKILLS_BREADTH' | 'ARCHITECTURE' | 'PRACTICES_QUALITY' |
-  'OPERATIONAL_EXCELLENCE' | 'CUSTOMER' | 'BUSINESS' | 'MENTORSHIP' |
-  'PROJECT_MANAGEMENT' | 'CUMMUNICATION' | 'ACCOUNTABILITY';
+export type TrackId = 'SKILLS_DEPTH' | 'SKILLS_BREADTH' | 'PRACTICES_QUALITY' | 'MANAGE_COMPLEXITY' |
+  'OPERATIONAL_EXCELLENCE' | 'PROJECT_MANAGEMENT' | 'CUSTOMER' | 'COMPANY' |
+  'MENTORSHIP' | 'COMMUNICATION';
 
 // ADD MILESTONE HERE
 export type Milestone = 0 | 1 | 2 | 3;
@@ -11,15 +11,14 @@ export type Milestone = 0 | 1 | 2 | 3;
 export type MilestoneMap = {
   'SKILLS_DEPTH': Milestone,
   'SKILLS_BREADTH': Milestone,
-  'ARCHITECTURE': Milestone,
   'PRACTICES_QUALITY': Milestone,
+  'MANAGE_COMPLEXITY': Milestone,
   'OPERATIONAL_EXCELLENCE': Milestone,
-  'CUSTOMER': Milestone,
-  'BUSINESS': Milestone,
-  'MENTORSHIP': Milestone,
   'PROJECT_MANAGEMENT': Milestone,
-  'COMMUNICATION': Milestone,
-  'ACCOUNTABILITY': Milestone
+  'CUSTOMER': Milestone,
+  'COMPANY': Milestone,
+  'MENTORSHIP': Milestone,
+  'COMMUNICATION': Milestone
 }
 
 // ADD MILESTONE HERE
@@ -70,15 +69,14 @@ export type Track = {
 type Tracks = {|
   'SKILLS_DEPTH': Track,
   'SKILLS_BREADTH': Track,
-  'ARCHITECTURE': Track,
   'PRACTICES_QUALITY': Track,
+  'MANAGE_COMPLEXITY': Track,
   'OPERATIONAL_EXCELLENCE': Track,
-  'CUSTOMER': Track,
-  'BUSINESS': Track,
-  'MENTORSHIP': Track,
   'PROJECT_MANAGEMENT': Track,
-  'COMMUNICATION': Track,
-  'ACCOUNTABILITY': Track
+  'CUSTOMER': Track,
+  'COMPANY': Track,
+  'MENTORSHIP': Track,
+  'COMMUNICATION': Track
 |}
 
 // ADD MILESTONE HERE IN EACH MILESTONE ARRAY
@@ -157,7 +155,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "ARCHITECTURE": {
+  "PRACTICES_QUALITY": {
     "displayName": "Practices & Quality",
     "category": "B",
     "description": "Works towards continuous and compounding improvements in our development practices to ensure we deliver the best possible experience to our users, faster",
@@ -194,7 +192,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "PRACTICES_QUALITY": {
+  "MANAGE_COMPLEXITY": {
     "displayName": "Manage Complexity",
     "category": "B",
     "description": "Consistently strives to ensure a healthy balance between quality and speed recognising the necessity of trade-offs",
@@ -275,7 +273,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "CUSTOMER": {
+  "PROJECT_MANAGEMENT": {
     "displayName": "Project Management",
     "category": "B",
     "description": "Works effectively within and across teams to ensure efficient delivery and prioritisation of work",
@@ -312,7 +310,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "BUSINESS": {
+  "CUSTOMER": {
     "displayName": "Customer",
     "category": "C",
     "description": "Builds meaningful and mutually beneficial relationships with SafetyCulture's customers, leveraging those relationships to help their teams deliver experiences that bring delight",
@@ -350,7 +348,7 @@ export const tracks: Tracks = {
   },
 
 
-  "MENTORSHIP": {
+  "COMPANY": {
     "displayName": "Company",
     "category": "C",
     "description": "Focuses intensely on making SafetyCulture better in every way. Holds themself and others around them accountable for contribution and for results",
@@ -389,7 +387,7 @@ export const tracks: Tracks = {
     }],
   },
 
-  "PROJECT_MANAGEMENT": {
+  "MENTORSHIP": {
     "displayName": "Coaching & Mentoring",
     "category": "D",
     "description": "Provides support to colleagues, spreads knowledge, and develops the team outside of formal reporting structures",
@@ -427,49 +425,6 @@ export const tracks: Tracks = {
   },
 
   "COMMUNICATION": {
-    "displayName": "Organisational - Ignore for now",
-    "category": "D",
-    "description": "LoremSafetyCultureIpsum",
-    "milestones": [{
-      "summary": "LoremSafetyCultureIpsum",
-      "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-      ],
-      "examples": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-      ],
-    }, {
-      "summary": "LoremSafetyCultureIpsum",
-      "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-      ],
-      "examples": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-      ],
-    }, {
-      "summary": "LoremSafetyCultureIpsum",
-      "signals": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-      ],
-      "examples": [
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-        "LoremSafetyCultureIpsum",
-      ],
-    }],
-  },
-
-  "ACCOUNTABILITY": {
     "displayName": "Communication",
     "category": "D",
     "description": "Delivers the right amount of information to the right people at the right time in a respectful and thoughful manner",

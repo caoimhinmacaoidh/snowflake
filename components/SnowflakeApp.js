@@ -28,9 +28,9 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]))
   })
   // Change this value up if introducing new levels
-  if (hashValues[11]) result.name = decodeURI(hashValues[11])
+  if (hashValues[10]) result.name = decodeURI(hashValues[10])
   // Same here.
-  if (hashValues[12]) result.title = decodeURI(hashValues[12])
+  if (hashValues[11]) result.title = decodeURI(hashValues[11])
   return result
 }
 
@@ -53,15 +53,14 @@ const emptyState = (): SnowflakeAppState => {
     milestoneByTrack: {
       'SKILLS_DEPTH': 0,
       'SKILLS_BREADTH': 0,
-      'ARCHITECTURE': 0,
       'PRACTICES_QUALITY': 0,
+      'MANAGE_COMPLEXITY': 0,
       'OPERATIONAL_EXCELLENCE': 0,
-      'CUSTOMER': 0,
-      'BUSINESS': 0,
-      'MENTORSHIP': 0,
       'PROJECT_MANAGEMENT': 0,
-      'COMMUNICATION': 0,
-      'ACCOUNTABILITY': 0
+      'CUSTOMER': 0,
+      'COMPANY': 0,
+      'MENTORSHIP': 0,
+      'COMMUNICATION': 0
     },
     focusedTrackId: 'SKILLS_DEPTH'
   }
@@ -73,16 +72,15 @@ const defaultState = (): SnowflakeAppState => {
     title: 'Staff Engineer',
     milestoneByTrack: {
       'SKILLS_DEPTH': 1,
-      'SKILLS_BREADTH': 2,
-      'ARCHITECTURE': 3,
-      'PRACTICES_QUALITY': 2,
-      'OPERATIONAL_EXCELLENCE': 0,
+      'SKILLS_BREADTH': 1,
+      'PRACTICES_QUALITY': 1,
+      'MANAGE_COMPLEXITY': 1,
+      'OPERATIONAL_EXCELLENCE': 1,
+      'PROJECT_MANAGEMENT': 1,
       'CUSTOMER': 1,
-      'BUSINESS': 4,
-      'MENTORSHIP': 3,
-      'PROJECT_MANAGEMENT': 2,
-      'COMMUNICATION': 0,
-      'ACCOUNTABILITY': 0
+      'COMPANY': 1,
+      'MENTORSHIP': 1,
+      'COMMUNICATION': 1
     },
     focusedTrackId: 'SKILLS_DEPTH'
   }
