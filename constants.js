@@ -93,7 +93,7 @@ export const tracks: Tracks = {
         "Migrates code from old patterns to new patterns",
       ],
       "examples": [
-        "TODO",
+        "Migrated a service from soter-forward to soter-jwt for authentication",
       ],
     }, {
       "summary": "Designs major new features and demonstrates a nuanced understanding of platform constraints",
@@ -103,14 +103,14 @@ export const tracks: Tracks = {
         "Performs systemic tasks to significantly improve performance",
       ],
       "examples": [
-        "TODO",
+        "Researched and drove the implementation of the Repository Pattern as a mechanism to imprrove cycle time of stories",
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
       "signals": [
         "Pioneers architecture migrations that increase developer productivity",
         "Makes architectural decisions that eliminate entire classes of bugs",
-        "Implements complex UI transitions that bring delight",
+        "Pioneers the introduction of new databases / persistence technologies to meet an underserved need",
       ],
       "examples": [
         "TODO",
@@ -130,7 +130,7 @@ export const tracks: Tracks = {
         "Regularly finds opportunities to pair or shadow with others to further their understanding of new areas/platforms",
       ],
       "examples": [
-        "TODO",
+        "Debugged a syncing error across iOS and services",
       ],
     }, {
       "summary": "Constistently and confidently makes changes across multiple areas/platforms with successful outcomes",
@@ -140,7 +140,8 @@ export const tracks: Tracks = {
         "Acts a caretaker for code across multiple repositories in areas outside of core competency",
       ],
       "examples": [
-        "TODO",
+        "Implemented complex stories across both Android and iOS / Backend and Web etc.",
+        "Competently wore the hat of UX-Designer in their team when no UX-er was available or was away on leave",
       ],
     }, {
       "summary": "Is skilled (level 2 in knowledge depth) in multiple platforms outside of their core competency",
@@ -177,14 +178,14 @@ export const tracks: Tracks = {
         "Implements systems that enable better testing",
       ],
       "examples": [
-        "TODO",
+        "Implemented testing infrastructure that alleviated major friction to writing tests on a particular platform, and delivered at the guild level",
       ],
     }, {
-      "summary": "Drives company-wide initiatives focused on release-safety and repeatability with a strong focus on automated coverage and confidence",
+      "summary": "Drives company-wide initiatives focused on release-safety and repeatability",
       "signals": [
         "Builds systems so as to eliminate entire classes of error",
         "Focuses the team on quality with regular reminders",
-        "Drives initiatives to ensure SPOC processes are improved over time",
+        "Introduces and envangalises new and modern paradigms in quality-engineering or test automation, leading to higher coverage and confidence in releases",
       ],
       "examples": [
         "TODO",
@@ -195,7 +196,7 @@ export const tracks: Tracks = {
   "MANAGE_COMPLEXITY": {
     "displayName": "Manage Complexity",
     "category": "B",
-    "description": "Consistently strives to ensure a healthy balance between quality and speed recognising the necessity of trade-offs",
+    "description": "Consistently strives to reduce complexity in existing systems, refactoring and simplifying code which has become difficult to update. Minimises complexity when building new systems",
     "milestones": [{
       "summary": "Understands and clearly articulates their team's areas of accumulated complexity and works actively to address and reduce technical debt as part of delivering user-value",
       "signals": [
@@ -209,7 +210,7 @@ export const tracks: Tracks = {
     }, {
       "summary": "Designs, documents and implements reliable, testable and elegant solutions to problems	",
       "signals": [
-        "Demonstrates an understanding of the ETTO principle and can articulate its use in technical decision making",
+        "Demonstrates an understanding of the ETTO (Efficiency/Time Trade-off) principle and can articulate its use in technical decision making",
         "Facilitates dialogue within teams, driving to a shared understanding of the problem at-hand",
         "Generates hypothesis about whether a described problem can be solved in a less complete way while generating equivalent impact",
       ],
@@ -235,7 +236,7 @@ export const tracks: Tracks = {
   "OPERATIONAL_EXCELLENCE": {
     "displayName": "Operational Excellence",
     "category": "B",
-    "description": "Designs, builds and supports systems and products in production, considering five-year capacity requirements (100x)",
+    "description": "Designs, builds and supports systems for performance, reliability and scalability considering growth requirements and future needs of our business",
     "milestones": [{
       "summary": "Builds and maintains awareness of operational concerns when building features & functionality",
       "signals": [
@@ -248,7 +249,7 @@ export const tracks: Tracks = {
         "Maintains or updates team dashboard to ensure that most impactful metrics are available to the team at a glance",
       ],
     }, {
-      "summary": "Owns and improves operational excellence for the team	",
+      "summary": "Owns and improves operational excellence for the team",
       "signals": [
         "Defines and implements context enabling metrics, which aid with debugging and illuminate how a system came to be in an alarm state",
         "Continually improves how their systems operate in production",
@@ -295,7 +296,7 @@ export const tracks: Tracks = {
         "Identifies and communicates risk to delivery of team's projects early and to the appropriate people",
       ],
       "examples": [
-        "TODO",
+        "When planning a new change or feature which impacted customer experience, made sure everyone was well informed and sought input about the change from external groups, e.g. product, design, customer success, customer experience",
       ],
     }, {
       "summary": "Able to break down, plan and manage incremental development of complex features that could span multiple teams",
@@ -318,14 +319,14 @@ export const tracks: Tracks = {
       "summary": "Diligently seeks out umprompted opportunites to connect with customers over multiple channels",
       "signals": [
         "Identifies and correct areas of code lacking analytics",
-        "Participates in customer calls, shares learnings and assists customer experience by answering support requests",
+        "Regularly participates in customer calls, shares learnings and assists customer experience by answering support requests",
         "Contributes to building and maintaining team metrics dashboard and uses it to focus team discussions",
       ],
       "examples": [
-        "TODO",
+        "Actively routed customer concerns that fall outside of team responsibilities to the teams that own those features",
       ],
     }, {
-      "summary": "Continually voices customer and product impact when discussing features & functionality ",
+      "summary": "Continually voices customer and product impact when discussing features & functionality",
       "signals": [
         "In product discussions refers to numerous specific customers by name and can explain their particular set of problems",
         "Continually evaluates product success metrics, identifying when particular metrics have outlived their usefulness and suggests suitable alternatives",
@@ -357,11 +358,11 @@ export const tracks: Tracks = {
       "signals": [
         "Regularly provides thoughtful feedback in team retrospective",
         "Identifies problems and suggests corrective course of action mid-sprint",
-        "Takes on additional SPOC shifts at short notice",
+        "Holds self accountable for commitments to their team",
       ],
       "examples": [
-        "TODO",
-        "Took on additional SPOC shifts at short notice",
+        "Readily identified when people from different teams needed to be brought together to solve a problem",
+        "Took on additional on-call shifts at short notice",
       ],
     }, {
       "summary": "Exemplifies selflessness for the team without compromising responsibilities",
@@ -372,7 +373,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Used a personal failure or shortcoming as a teaching example during team retro. Showed confidence in being vulnerable",
-        "TODO",
+        "Took on additional on-call shifts for another team when team members were unavailable or on leave",
       ],
     }, {
       "summary": "Lives by SafetyCulture's values, guards our culture, and introduces initiatives that support connectedness between teams",
@@ -409,7 +410,7 @@ export const tracks: Tracks = {
         "Allows others to lead efforts when it will help their development",
       ],
       "examples": [
-        "TODO",
+        "Facilitated a group-pairing exercise to up-skill multiple individuals on a particular technology or set of technologies",
       ],
     }, {
       "summary": "Fosters a culture of mentorship by encouraging people across the business to mentor one another, and creates opportunities for them to do so",
@@ -419,7 +420,7 @@ export const tracks: Tracks = {
         "Fosters and develops coaching skills in others",
       ],
       "examples": [
-        "TODO",
+        "Held an impactful workshop for engineers on 'Developing your coaching skills'",
       ],
     }],
   },
@@ -431,22 +432,22 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
       "signals": [
-        "Ensures stakeholders are aware of current blockers",
+        "Keeps team aware of risks or blockers, communicating impacts clearly and succinctly",
         "Collaborates with others with humility, respect and trust",
         "Chooses the appropriate tools for accurate and timely communication",
       ],
       "examples": [
-        "TODO",
+        "Manned a SafetyCulture sponsored booth at a conference / recruiting event, communicating proactively and effectively with attendees",
       ],
     }, {
       "summary": "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders	",
       "signals": [
-        "Practises active listening and suspension of attention",
+        "Listens actively and attentively when engaging with colleages at all levels showing care and empathy for the other parties",
         "Presents information in a clear and concise manner and in a format appropriate to the audience",
         "Resolves communication difficulties between others",
       ],
       "examples": [
-        "TODO",
+        "Represented SafetyCulture by presenting at a meetup with a medium to large audience",
       ],
     }, {
       "summary": "Communicates complex ideas skilfully, with attention to detail and nuance. Establishes alignment within the wider organisation	",
