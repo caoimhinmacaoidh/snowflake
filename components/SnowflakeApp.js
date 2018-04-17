@@ -145,7 +145,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
           }
         `}</style>
         <div style={{margin: '19px auto 0'}}>
-          <a href="https://medium.com/" target="_blank">
+          <a href="http://cision-wp-files.s3.amazonaws.com/careers/wp-content/uploads/2016/03/career-growth-2-300x241.png" target="_blank">
             <Wordmark />
           </a>
         </div>
