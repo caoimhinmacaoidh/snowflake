@@ -2,7 +2,7 @@
 
 [insert_ridiculous_name] is SafetyCulture's tool for planning and supporting our engineers' career development. You can read more
 about how we use this tool in our [growth framework documentation](https://safetyculture.com).
-Our growth tool is hosted [publicly]((https://safetyculture.com)).
+Our growth tool is hosted [internally](https://internal.safetyculture.com).
 
 ## Installation
 
