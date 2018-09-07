@@ -12,7 +12,7 @@ const margins = {
   left: 10
 }
 const height = 150
-const width = 550
+const width = 1000
 
 type Props = {
   milestoneByTrack: MilestoneMap,
@@ -29,7 +29,7 @@ class LevelThermometer extends React.Component<Props> {
     super(props)
 
     this.pointScale = d3.scaleLinear()
-      .domain([0, 135])
+      .domain([0, 130])
       .rangeRound([0, width - margins.left - margins.right]);
 
     this.topAxisFn = d3.axisTop()

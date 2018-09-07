@@ -42,6 +42,7 @@ const coerceMilestone = (value: number): Milestone => {
     case 1: return 1
     case 2: return 2
     case 3: return 3
+    case 4: return 4
     default: return 0
   }
 }
@@ -167,13 +168,17 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                   onChange={e => this.setState({name: e.target.value})}
                   placeholder="Name"
                   />
-              {/* <TitleSelector
+              { <TitleSelector
                   milestoneByTrack={this.state.milestoneByTrack}
                   currentTitle={this.state.title}
-                  setTitleFn={(title) => this.setTitle(title)} /> */}
+                  setTitleFn={(title) => this.setTitle(title)} /> }
             </form>
-            {/* <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} /> */}
+            { 
+            <div>
+            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
+            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} /> 
+            </div>
+          }
           </div>
         </div>
         <TrackSelector
